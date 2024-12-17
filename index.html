@@ -3,10 +3,13 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>My Portfolio</title>
+    <meta name="description" content="Professional portfolio of Rizki Waluya Ramadhan, showcasing web development projects and skills.">
+    <meta name="author" content="Rizki Waluya Ramadhan">
+    <title>Rizki's Portfolio</title>
     <link rel="stylesheet" href="style.css">
     <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;600&display=swap" rel="stylesheet">
     <style>
+        /* Base Styles */
         body {
             font-family: 'Poppins', sans-serif;
             margin: 0;
@@ -22,6 +25,7 @@
             position: sticky;
             top: 0;
             z-index: 1000;
+            box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
         }
 
         nav ul {
@@ -48,10 +52,11 @@
         }
 
         section {
-            padding: 50px 20px;
+            padding: 60px 20px;
             text-align: center;
         }
 
+        /* Hero Section */
         #home {
             background: linear-gradient(to right, #007BFF, #00BFFF);
             color: #fff;
@@ -59,21 +64,49 @@
         }
 
         #home h1 {
-            font-size: 2.5rem;
-            margin-bottom: 10px;
+            font-size: 3rem;
+            margin-bottom: 20px;
         }
 
         #home p {
             font-size: 1.2rem;
         }
 
-        #projects {
+        #home button {
+            margin-top: 20px;
+            background: #FFD700;
+            border: none;
+            padding: 10px 20px;
+            color: #333;
+            font-weight: bold;
+            cursor: pointer;
+            border-radius: 4px;
+            transition: background 0.3s;
+        }
+
+        #home button:hover {
+            background: #FFC107;
+        }
+
+        /* About Section */
+        #about {
             background: #f9f9f9;
+            color: #333;
+        }
+
+        #about p {
+            max-width: 800px;
+            margin: 0 auto;
+        }
+
+        /* Projects Section */
+        #projects {
+            background: #fff;
         }
 
         .projects-grid {
             display: grid;
-            grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+            grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
             gap: 20px;
             padding: 20px;
         }
@@ -94,7 +127,7 @@
 
         .project-card h3 {
             margin-top: 0;
-            font-size: 1.2rem;
+            font-size: 1.5rem;
             color: #007BFF;
         }
 
@@ -104,6 +137,11 @@
             font-weight: 600;
         }
 
+        .project-card a:hover {
+            color: #007BFF;
+        }
+
+        /* Contact Section */
         #contact {
             background: #007BFF;
             color: #fff;
@@ -118,7 +156,7 @@
             width: 100%;
             padding: 10px;
             margin: 10px 0;
-            border: none;
+            border: 1px solid #ddd;
             border-radius: 4px;
         }
 
@@ -137,11 +175,25 @@
             background: #FFC107;
         }
 
+        /* Footer */
         footer {
             background: #333;
             color: #fff;
             text-align: center;
-            padding: 10px 0;
+            padding: 15px 0;
+        }
+
+        footer p {
+            margin: 0;
+        }
+
+        footer a {
+            color: #FFD700;
+            text-decoration: none;
+        }
+
+        footer a:hover {
+            color: #FFC107;
         }
     </style>
 </head>
@@ -159,12 +211,13 @@
 
     <section id="home">
         <h1>Welcome to My Portfolio</h1>
-        <p>I'm a passionate web developer dedicated to crafting elegant solutions.</p>
+        <p>Crafting impactful and elegant web solutions with precision and creativity.</p>
+        <button onclick="location.href='#contact'">Get in Touch</button>
     </section>
 
     <section id="about">
         <h2>About Me</h2>
-        <p>Hi! I'm Rizki Waluya Ramadhan, a web developer passionate about creating beautiful and functional websites. With experience in HTML, CSS, and JavaScript, I aim to deliver high-quality projects that leave a lasting impact.</p>
+        <p>Hi! I'm Rizki Waluya Ramadhan, a web developer who specializes in creating modern, user-friendly websites. I focus on delivering high-quality solutions using HTML, CSS, and JavaScript. With a passion for technology and innovation, I continuously seek opportunities to grow and make a difference.</p>
     </section>
 
     <section id="projects">
@@ -208,7 +261,7 @@
     </section>
 
     <footer>
-        <p>&copy; 2024 Rizki Waluya Ramadhan</p>
+        <p>&copy; 2024 Rizki Waluya Ramadhan | <a href="#home">Back to Top</a></p>
     </footer>
 </body>
 </html>
