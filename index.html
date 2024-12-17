@@ -3,197 +3,27 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <meta name="description" content="Professional portfolio of Rizki Waluya Ramadhan, showcasing web development projects and skills.">
-    <meta name="author" content="Rizki Waluya Ramadhan">
-    <title>Rizki's Portfolio</title>
+    <title>My Portfolio</title>
     <link rel="stylesheet" href="style.css">
-    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;600&display=swap" rel="stylesheet">
     <style>
-        /* Base Styles */
-        body {
-            font-family: 'Poppins', sans-serif;
-            margin: 0;
-            padding: 0;
-            color: #333;
-            line-height: 1.6;
-        }
-
-        header {
-            background: #007BFF;
-            color: #fff;
-            padding: 1rem 0;
-            position: sticky;
-            top: 0;
-            z-index: 1000;
-            box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
-        }
-
-        nav ul {
-            list-style: none;
-            display: flex;
-            justify-content: center;
-            padding: 0;
-            margin: 0;
-        }
-
-        nav ul li {
-            margin: 0 15px;
-        }
-
-        nav ul li a {
-            text-decoration: none;
-            color: #fff;
-            font-weight: 600;
-            transition: color 0.3s;
-        }
-
-        nav ul li a:hover {
-            color: #FFD700;
-        }
-
-        section {
-            padding: 60px 20px;
-            text-align: center;
-        }
-
-        /* Hero Section */
-        #home {
-            background: linear-gradient(to right, #007BFF, #00BFFF);
-            color: #fff;
-            padding: 100px 20px;
-        }
-
-        #home h1 {
-            font-size: 3rem;
-            margin-bottom: 20px;
-        }
-
-        #home p {
-            font-size: 1.2rem;
-        }
-
-        #home button {
-            margin-top: 20px;
-            background: #FFD700;
-            border: none;
-            padding: 10px 20px;
-            color: #333;
-            font-weight: bold;
-            cursor: pointer;
-            border-radius: 4px;
-            transition: background 0.3s;
-        }
-
-        #home button:hover {
-            background: #FFC107;
-        }
-
-        /* About Section */
-        #about {
-            background: #f9f9f9;
-            color: #333;
-        }
-
-        #about p {
-            max-width: 800px;
-            margin: 0 auto;
-        }
-
-        /* Projects Section */
-        #projects {
-            background: #fff;
-        }
-
-        .projects-grid {
-            display: grid;
-            grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
-            gap: 20px;
-            padding: 20px;
-        }
-
-        .project-card {
-            background: #fff;
-            border: 1px solid #ddd;
-            border-radius: 8px;
-            padding: 20px;
-            box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
-            transition: transform 0.3s, box-shadow 0.3s;
-        }
-
-        .project-card:hover {
-            transform: translateY(-5px);
-            box-shadow: 0 6px 12px rgba(0, 0, 0, 0.2);
-        }
-
-        .project-card h3 {
-            margin-top: 0;
-            font-size: 1.5rem;
-            color: #007BFF;
-        }
-
-        .project-card a {
-            text-decoration: none;
-            color: #333;
-            font-weight: 600;
-        }
-
-        .project-card a:hover {
-            color: #007BFF;
-        }
-
-        /* Contact Section */
-        #contact {
-            background: #007BFF;
-            color: #fff;
-        }
-
-        #contact form {
-            max-width: 600px;
-            margin: 0 auto;
-        }
-
-        #contact input, #contact textarea {
+        table {
             width: 100%;
+            border-collapse: collapse;
+            margin-top: 20px;
+        }
+
+        th, td {
             padding: 10px;
-            margin: 10px 0;
             border: 1px solid #ddd;
-            border-radius: 4px;
+            text-align: left;
         }
 
-        #contact button {
-            background: #FFD700;
-            border: none;
-            padding: 10px 20px;
-            color: #333;
-            font-weight: bold;
-            cursor: pointer;
-            border-radius: 4px;
-            transition: background 0.3s;
+        th {
+            background-color: #f2f2f2;
         }
 
-        #contact button:hover {
-            background: #FFC107;
-        }
-
-        /* Footer */
-        footer {
-            background: #333;
-            color: #fff;
-            text-align: center;
-            padding: 15px 0;
-        }
-
-        footer p {
-            margin: 0;
-        }
-
-        footer a {
-            color: #FFD700;
-            text-decoration: none;
-        }
-
-        footer a:hover {
-            color: #FFC107;
+        tr:hover {
+            background-color: #f5f5f5;
         }
     </style>
 </head>
@@ -211,65 +41,74 @@
 
     <section id="home">
         <h1>Welcome to My Portfolio</h1>
-        <p>Crafting impactful and elegant web solutions with precision and creativity.</p>
-        <button onclick="location.href='#contact'">Get in Touch</button>
+        <p>I'm a passionate web developer.</p>
     </section>
 
     <section id="about">
         <h2>About Me</h2>
-        <p>Hi! I'm Rizki Waluya Ramadhan, a web developer who specializes in creating modern, user-friendly websites. I focus on delivering high-quality solutions using HTML, CSS, and JavaScript. With a passion for technology and innovation, I continuously seek opportunities to grow and make a difference.</p>
+        
+        <p>Hi! I'm Rizki Waluya Ramadhan, a web developer with a passion for creating dynamic and responsive websites. I love coding and learning new technologies. Let's build something great together!</p>
     </section>
 
     <section id="projects">
         <h2>My Projects</h2>
-        <div class="projects-grid">
-            <div class="project-card">
-                <h3>Form Login</h3>
-                <a href="Tugas%20form%20login/login.html" target="_blank">View Project</a>
-            </div>
-            <div class="project-card">
-                <h3>Calculator</h3>
-                <a href="tugas%20kalkulator/kalku.html" target="_blank">View Project</a>
-            </div>
-            <div class="project-card">
-                <h3>Dashboard Admin</h3>
-                <a href="tugas%20dashboard/dashboard.html" target="_blank">View Project</a>
-            </div>
-            <div class="project-card">
-                <h3>Certificate HTML</h3>
-                <a href="https://www.sololearn.com/certificates/CC-33RK2RLO" target="_blank">View Project</a>
-            </div>
-            <div class="project-card">
-                <h3>Certificate CSS</h3>
-                <a href="https://www.sololearn.com/certificates/CC-LXM9TVXG" target="_blank">View Project</a>
-            </div>
-            <div class="project-card">
-                <h3>Game Tetris</h3>
-                <a href="game%20tetris/tetris.html" target="_blank">View Project</a>
-            </div>
-             <div class="project-card">
-                <h3>Certificate JS Intermediate</h3>
-                <a href="https://www.sololearn.com/certificates/CC-BJVNLZ7O" target="_blank">View Project</a>
-            </div>
-             <div class="project-card">
-                <h3>Diagram</h3>
-                <a href="diagram/diagram.html" target="_blank">View Project</a>
-            </div>
-        </div>
+        <table>
+            <thead>
+                <tr>
+                    <th>Project Name</th>
+                    <th>Link</th>
+                </tr>
+            </thead>
+            <tbody>
+                <tr>
+                    <td>Form Login</td>
+                    <td><a href="Tugas form login/login.html" target="_blank">View Project</a></td>
+                </tr>
+                <tr>
+                    <td>Calculator</td>
+                    <td><a href="tugas kalkulator/kalku.html" target="_blank">View Project</a></td>
+                </tr>
+                <tr>
+                    <td>Dashboard Admin</td>
+                    <td><a href="tugas dashboard/dashboard.html" target="_blank">View Project</a></td>
+                </tr>
+                <tr>
+                    <td>Certificate HTML</td>
+                    <td><a href="https://www.sololearn.com/certificates/CC-33RK2RLO" target="_blank">View Project</a></td>
+                </tr>
+                <tr>
+                    <td>Certificate CSS</td>
+                    <td><a href="https://www.sololearn.com/certificates/CC-LXM9TVXG" target="_blank">View Project</a></td>
+                </tr>
+
+                <tr>
+                    <td>Certificate JS</td>
+                    <td><a href="https://www.sololearn.com/certificates/CC-1YLFBQQ8" target="_blank">View Project</a></td>
+                </tr>
+                <tr>
+                    <td>Certificate JS Intermediate</td>
+                    <td><a href="https://www.sololearn.com/certificates/CC-BJVNLZ7O" target="_blank">View Project</a></td>
+                </tr>
+                <tr>
+                    <td>Game Tetris</td>
+                    <td><a href="game tetris/tetris.html "target="_blank">View Project</a></td>
+                </tr>
+                <td>Diagram</td>
+                <td><a href="diagram/diagram.html" target="_blank">View Project</a></td>
+            </tr>
+                <!-- Add more projects as needed -->
+            </tbody>
+        </table>
     </section>
 
     <section id="contact">
         <h2>Contact Me</h2>
-        <form>
-            <input type="text" placeholder="Your Name" required>
-            <input type="email" placeholder="Your Email" required>
-            <textarea placeholder="Your Message" rows="5" required></textarea>
-            <button type="submit">Send</button>
-        </form>
+        <p>If you have any questions, feel free to reach out!</p>
+        <!-- Contact form goes here -->
     </section>
 
     <footer>
-        <p>&copy; 2024 Rizki Waluya Ramadhan | <a href="#home">Back to Top</a></p>
+        <p>&copy; 2024 Rizki Waluya Ramadhan</p>
     </footer>
 </body>
 </html>
